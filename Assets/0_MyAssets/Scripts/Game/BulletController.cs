@@ -15,6 +15,7 @@ public class BulletController : MonoBehaviour
     public BulletState bulletState { get; set; }
     float timer;
     float timeLimit = 3;
+    Vector3 vel;
 
     public void OnStart()
     {
@@ -29,12 +30,19 @@ public class BulletController : MonoBehaviour
         switch (bulletState)
         {
             case BulletState.Shooting:
+                rb.velocity = vel;
                 Timer();
                 break;
             default:
                 break;
         }
     }
+
+    void OnCollisionEnter2D(Collision2D collisionInfo)
+    {
+        vel = Vector3.Reflect(vel, collisionInfo.contacts[0].normal);
+    }
+
 
     void Timer()
     {
@@ -48,7 +56,7 @@ public class BulletController : MonoBehaviour
     public void Shoot(Vector3 vec)
     {
         gameObject.SetActive(true);
-        rb.velocity = vec.normalized * speed;
+        vel = vec.normalized * speed;
         transform.parent = null;
         bulletState = BulletState.Shooting;
     }
