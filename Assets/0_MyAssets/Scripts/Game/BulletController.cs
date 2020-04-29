@@ -26,6 +26,18 @@ public class BulletController : MonoBehaviour
 
     void Update()
     {
+        switch (bulletState)
+        {
+            case BulletState.Shooting:
+                Timer();
+                break;
+            default:
+                break;
+        }
+    }
+
+    void Timer()
+    {
         if (timer > timeLimit)
         {
             gameObject.SetActive(false);
