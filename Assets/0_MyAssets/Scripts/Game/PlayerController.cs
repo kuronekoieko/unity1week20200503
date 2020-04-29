@@ -6,11 +6,12 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] Transform armAxis;
+    [SerializeField] Transform shootPoint;
     LineRenderer lineRenderer;
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.SetPosition(0, armAxis.position);
+
     }
 
 
@@ -23,12 +24,12 @@ public class PlayerController : MonoBehaviour
         Vector3 armVec = worldPos - transform.position;
         armAxis.eulerAngles = new Vector3(0, 0, Vector2ToDegree(armVec));
 
-
+        lineRenderer.SetPosition(0, shootPoint.position);
         lineRenderer.SetPosition(1, worldPos);
         //line.SetPosition関数の第一引数は配列の要素数(配列は0スタートです！,第二引数は座標です)
 
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
+        lineRenderer.startWidth = 0.05f;
+        lineRenderer.endWidth = 0.05f;
         //lineの太さを決められます。
     }
 
