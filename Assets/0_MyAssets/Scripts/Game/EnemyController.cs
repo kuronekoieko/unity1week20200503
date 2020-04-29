@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class EnemyController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [NonSerialized] public bool isDead;
+
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
@@ -21,5 +22,6 @@ public class EnemyController : MonoBehaviour
         var bullet = collisionInfo.gameObject.GetComponent<BulletController>();
         if (bullet == null) { return; }
         gameObject.layer = LayerMask.NameToLayer("Dead");
+        isDead = true;
     }
 }
