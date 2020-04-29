@@ -8,6 +8,8 @@ public class BulletLeftManager : MonoBehaviour
     [SerializeField] SpriteRenderer bulletLeftPrefab;
     SpriteRenderer[] bulletLeftSRs;
     float distance = 0.8f;
+    float posY = 4.0f;
+
     public void OnStart()
     {
         BulletLeftGenerator();
@@ -26,7 +28,7 @@ public class BulletLeftManager : MonoBehaviour
     {
         bulletLeftSRs = new SpriteRenderer[Variables.bulletCount];
         Vector3 pos = Vector3.zero;
-        pos.y = 4;
+        pos.y = posY;
         pos.x = Mathf.Floor(bulletLeftSRs.Length / 2) * (-distance);
 
         bool isEven = (bulletLeftSRs.Length % 2 == 0);
