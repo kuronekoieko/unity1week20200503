@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Variables.screenState != ScreenState.Game) { return; }
 
         if (Input.GetMouseButtonDown(0))
         {

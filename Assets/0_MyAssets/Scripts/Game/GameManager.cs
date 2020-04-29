@@ -8,15 +8,17 @@ using System.Linq;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] BulletManager bulletManager;
-    [SerializeField] EnemyManager enemyManager;
-    [SerializeField] BulletLeftManager bulletLeftManager;
+    public BulletManager bulletManager;
+    public EnemyManager enemyManager;
+    public BulletLeftManager bulletLeftManager;
     GameObject[] stages;
     PlayerController player;
+    public static GameManager i;
 
     void Start()
     {
-        Variables.bulletLeftCount = 5;
+        i = this;
+        Variables.bulletCount = 5;
 
         stages = Resources.LoadAll("Stages", typeof(GameObject)).Cast<GameObject>().ToArray();
         Variables.lastStageIndex = stages.Length - 1;

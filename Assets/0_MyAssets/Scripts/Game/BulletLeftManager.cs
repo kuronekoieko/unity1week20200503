@@ -8,15 +8,13 @@ public class BulletLeftManager : MonoBehaviour
     [SerializeField] SpriteRenderer bulletLeftPrefab;
     SpriteRenderer[] bulletLeftSRs;
     float distance = 0.8f;
-    int max;
     public void OnStart()
     {
-        max = Variables.bulletLeftCount;
         BulletLeftGenerator();
-        this.ObserveEveryValueChanged(bulletLeftCount => Variables.bulletLeftCount)
-            .Subscribe(bulletLeftCount =>
+        this.ObserveEveryValueChanged(usedBulletCount => GameManager.i.bulletManager.GetCount())
+            .Subscribe(usedBulletCount =>
             {
-                for (int i = 0; i < max - bulletLeftCount; i++)
+                for (int i = 0; i < usedBulletCount; i++)
                 {
                     bulletLeftSRs[i].color = Color.black;
                 }
@@ -26,7 +24,7 @@ public class BulletLeftManager : MonoBehaviour
 
     void BulletLeftGenerator()
     {
-        bulletLeftSRs = new SpriteRenderer[Variables.bulletLeftCount];
+        bulletLeftSRs = new SpriteRenderer[Variables.bulletCount];
         Vector3 pos = Vector3.zero;
         pos.y = 4;
         pos.x = Mathf.Floor(bulletLeftSRs.Length / 2) * (-distance);

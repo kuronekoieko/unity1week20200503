@@ -9,7 +9,7 @@ public class BulletManager : MonoBehaviour
 
     public void OnStart(Transform shootPoint)
     {
-        bulletControllers = new BulletController[Variables.bulletLeftCount];
+        bulletControllers = new BulletController[Variables.bulletCount];
         for (int i = 0; i < bulletControllers.Length; i++)
         {
             bulletControllers[i] = Instantiate(bulletPrefab, Vector3.zero, Quaternion.identity, shootPoint);
@@ -37,6 +37,10 @@ public class BulletManager : MonoBehaviour
             .FirstOrDefault();
         if (bullet == null) { return; }
         bullet.Shoot(vec);
-        Variables.bulletLeftCount--;
+    }
+
+    public int GetCount()
+    {
+        return bulletControllers.Where(b => b.bulletState != BulletState.Waiting).Count();
     }
 }
