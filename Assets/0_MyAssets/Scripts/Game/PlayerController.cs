@@ -7,15 +7,16 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform armAxis;
     [SerializeField] Transform shootPoint;
-    [SerializeField] BulletManager bulletManager;
+    BulletManager bulletManager;
     LineRenderer lineRenderer;
     Vector3 shootVec;
-    void Start()
+    public void OnStart(BulletManager bulletManager)
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.startWidth = 0.05f;
         lineRenderer.endWidth = 0.05f;
         bulletManager.OnStart(shootPoint);
+        this.bulletManager = bulletManager;
     }
 
 

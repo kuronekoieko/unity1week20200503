@@ -7,7 +7,7 @@ public class EnemyManager : MonoBehaviour
 {
     EnemyController[] enemyControllers;
 
-    void Start()
+    public void OnStart()
     {
         enemyControllers = FindObjectsOfType<EnemyController>();
     }
