@@ -14,12 +14,18 @@ public class EnemyManager : MonoBehaviour
 
     void Update()
     {
+        CheckClear();
+    }
+
+    void CheckClear()
+    {
+        if (Variables.screenState != ScreenState.Game) { return; }
+
         bool isDeadAll = enemyControllers
-            .Where(e => e.gameObject.activeSelf)
-            .All(e => e.isDead);
-        if (isDeadAll)
-        {
-            Variables.screenState = ScreenState.Clear;
-        }
+                   .Where(e => e.gameObject.activeSelf)
+                   .All(e => e.isDead);
+        if (!isDeadAll) { return; }
+
+        Variables.screenState = ScreenState.Clear;
     }
 }
