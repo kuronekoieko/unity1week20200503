@@ -7,13 +7,14 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform armAxis;
     [SerializeField] Transform shootPoint;
-    [SerializeField] BulletController bulletController;
+    [SerializeField] BulletManager bulletManager;
     LineRenderer lineRenderer;
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.startWidth = 0.05f;
         lineRenderer.endWidth = 0.05f;
+        bulletManager.OnStart(shootPoint);
     }
 
 
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            bulletController.Shoot(shootVec);
+            bulletManager.ShootNextBullet(shootVec);
         }
     }
 
