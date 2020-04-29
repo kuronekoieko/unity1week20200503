@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform armAxis;
     [SerializeField] Transform shootPoint;
+    [SerializeField] BulletController bulletController;
     LineRenderer lineRenderer;
     void Start()
     {
@@ -19,13 +20,20 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        worldPos.z = 0;
-        Vector3 armVec = worldPos - transform.position;
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0;
+        Vector3 armVec = mousePos - transform.position;
         armAxis.eulerAngles = new Vector3(0, 0, Vector2ToDegree(armVec));
 
+        Vector3 shootVec = mousePos - shootPoint.position;
         lineRenderer.SetPosition(0, shootPoint.position);
-        lineRenderer.SetPosition(1, shootPoint.position + armVec.normalized * 20f);
+        lineRenderer.SetPosition(1, shootPoint.position + shootVec.normalized * 20f);
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            bulletController.Shoot(shootVec);
+        }
     }
 
     public static float Vector2ToDegree(Vector2 vec)
