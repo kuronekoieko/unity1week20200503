@@ -12,11 +12,12 @@ public enum BulletState
 public class BulletController : MonoBehaviour
 {
     Rigidbody2D rb;
-    float speed = 20f;
+    float speed = 50f;
     public BulletState bulletState { get; set; }
     float timer;
     float timeLimit = 3;
     Vector3 vel;
+    bool isCollision;
 
     public void OnStart()
     {
@@ -43,7 +44,17 @@ public class BulletController : MonoBehaviour
     {
         var enemy = collisionInfo.gameObject.GetComponent<EnemyController>();
         if (enemy) { return; }
+
+        if (isCollision) { return; }
+        isCollision = true;
         vel = Vector3.Reflect(vel, collisionInfo.contacts[0].normal);
+    }
+
+    void OnCollisionExit2D(Collision2D collisionInfo)
+    {
+        var enemy = collisionInfo.gameObject.GetComponent<EnemyController>();
+        if (enemy) { return; }
+        isCollision = false;
     }
 
 
