@@ -18,7 +18,7 @@ public class GameCanvasManager : BaseCanvasManager
 
     public override void OnStart()
     {
-      
+
 
         base.SetScreenAction(thisScreen: thisScreen);
 
@@ -48,6 +48,6 @@ public class GameCanvasManager : BaseCanvasManager
 
     void ShowStageNumText()
     {
-        stageNumText.text = "Stage " + (Variables.currentStageIndex + 1).ToString("000");
+        stageNumText.text = "LEVEL " + (Variables.currentStageIndex + 1).ToString("000");
     }
 }

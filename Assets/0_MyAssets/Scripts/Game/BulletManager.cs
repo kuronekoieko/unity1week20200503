@@ -19,7 +19,15 @@ public class BulletManager : MonoBehaviour
 
     void Update()
     {
+        CheckFailed();
+    }
 
+    void CheckFailed()
+    {
+        if (Variables.screenState != ScreenState.Game) { return; }
+        bool isShootedAll = bulletControllers.All(b => b.bulletState == BulletState.Hided);
+        if (!isShootedAll) { return; }
+        Variables.screenState = ScreenState.Failed;
     }
 
     public void ShootNextBullet(Vector3 vec)

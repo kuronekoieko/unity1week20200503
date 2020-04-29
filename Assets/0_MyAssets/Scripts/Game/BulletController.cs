@@ -6,6 +6,7 @@ public enum BulletState
 {
     Waiting,
     Shooting,
+    Hided,
 }
 
 public class BulletController : MonoBehaviour
@@ -50,6 +51,7 @@ public class BulletController : MonoBehaviour
     {
         if (timer > timeLimit)
         {
+            bulletState = BulletState.Hided;
             gameObject.SetActive(false);
         }
         timer += Time.deltaTime;
