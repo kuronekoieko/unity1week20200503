@@ -40,6 +40,8 @@ public class BulletController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
+        var enemy = collisionInfo.gameObject.GetComponent<EnemyController>();
+        if (enemy) { return; }
         vel = Vector3.Reflect(vel, collisionInfo.contacts[0].normal);
     }
 
