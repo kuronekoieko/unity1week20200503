@@ -9,7 +9,7 @@ public class BulletManager : MonoBehaviour
 
     public void OnStart(Transform shootPoint)
     {
-        bulletControllers = new BulletController[5];
+        bulletControllers = new BulletController[Variables.bulletLeftCount];
         for (int i = 0; i < bulletControllers.Length; i++)
         {
             bulletControllers[i] = Instantiate(bulletPrefab, Vector3.zero, Quaternion.identity, shootPoint);

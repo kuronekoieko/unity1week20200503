@@ -4,7 +4,9 @@ using UnityEngine;
 using System;
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] ParticleSystem deadPS;
     [NonSerialized] public bool isDead;
+
 
     void Start()
     {
@@ -23,5 +25,6 @@ public class EnemyController : MonoBehaviour
         if (bullet == null) { return; }
         gameObject.layer = LayerMask.NameToLayer("Dead");
         isDead = true;
+        deadPS.Play();
     }
 }

@@ -10,11 +10,14 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] BulletManager bulletManager;
     [SerializeField] EnemyManager enemyManager;
+    [SerializeField] BulletLeftManager bulletLeftManager;
     GameObject[] stages;
     PlayerController player;
 
     void Start()
     {
+        Variables.bulletLeftCount = 5;
+
         stages = Resources.LoadAll("Stages", typeof(GameObject)).Cast<GameObject>().ToArray();
         Variables.lastStageIndex = stages.Length - 1;
         Instantiate(stages[Variables.currentStageIndex], Vector3.zero, Quaternion.identity);
@@ -23,5 +26,7 @@ public class GameManager : MonoBehaviour
         player.OnStart(bulletManager);
 
         enemyManager.OnStart();
+
+        bulletLeftManager.OnStart();
     }
 }
