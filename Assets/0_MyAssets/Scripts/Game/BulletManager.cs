@@ -37,5 +37,6 @@ public class BulletManager : MonoBehaviour
             .FirstOrDefault();
         if (bullet == null) { return; }
         bullet.Shoot(vec);
+        Variables.bulletLeftCount--;
     }
 }
