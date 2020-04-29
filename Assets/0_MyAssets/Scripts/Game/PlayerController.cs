@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-
+        lineRenderer.startWidth = 0.05f;
+        lineRenderer.endWidth = 0.05f;
     }
 
 
@@ -20,17 +21,11 @@ public class PlayerController : MonoBehaviour
 
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         worldPos.z = 0;
-        Debug.Log(worldPos);
         Vector3 armVec = worldPos - transform.position;
         armAxis.eulerAngles = new Vector3(0, 0, Vector2ToDegree(armVec));
 
         lineRenderer.SetPosition(0, shootPoint.position);
-        lineRenderer.SetPosition(1, worldPos);
-        //line.SetPosition関数の第一引数は配列の要素数(配列は0スタートです！,第二引数は座標です)
-
-        lineRenderer.startWidth = 0.05f;
-        lineRenderer.endWidth = 0.05f;
-        //lineの太さを決められます。
+        lineRenderer.SetPosition(1, shootPoint.position + armVec.normalized * 20f);
     }
 
     public static float Vector2ToDegree(Vector2 vec)
