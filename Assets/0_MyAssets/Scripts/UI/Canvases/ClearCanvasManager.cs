@@ -9,6 +9,7 @@ public class ClearCanvasManager : BaseCanvasManager
 {
     [SerializeField] Button nextButton;
     [SerializeField] UICameraController uICameraController;
+    [SerializeField] Image bgImage;
     [SerializeField] Image[] starImages;
     public readonly ScreenState thisScreen = ScreenState.Clear;
 
@@ -29,21 +30,17 @@ public class ClearCanvasManager : BaseCanvasManager
     protected override void OnOpen()
     {
         uICameraController.PlayConfetti();
-        int bulletCountLeft = GameManager.i.bulletManager.GetLeftCount();
-        LevelData levelData = LevelDataSO.i.levelDatas[Variables.currentStageIndex];
-        int starCount = 1;
-        if (bulletCountLeft >= levelData.twoStarMinimumBulletLeftCount) { starCount = 2; }
-        if (bulletCountLeft >= levelData.threeStarMinimumBulletLeftCount) { starCount = 3; }
-        Debug.Log(starCount);
-        for (int i = 0; i < starImages.Length; i++)
-        {
-            starImages[i].color = (i < starCount) ? Color.white : Color.black;
-            starImages[i].transform.localScale = Vector3.zero;
-        }
+        SetStarCount();
+
+        Color c = bgImage.color;
+        c.a = 0;
+        bgImage.color = c;
+
 
         DOVirtual.DelayedCall(1.2f, () =>
         {
             gameObject.SetActive(true);
+            DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.5f, 0.5f);
             starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
             starImages[1].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.1f);
             starImages[2].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.2f);
@@ -58,10 +55,26 @@ public class ClearCanvasManager : BaseCanvasManager
     void OnClickNextButton()
     {
         base.ToNextScene();
+        //DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0f, 0.5f).OnComplete(base.ToNextScene);
     }
 
     void OnClickHomeButton()
     {
         Variables.screenState = ScreenState.Home;
+    }
+
+    void SetStarCount()
+    {
+        int bulletCountLeft = GameManager.i.bulletManager.GetLeftCount();
+        LevelData levelData = LevelDataSO.i.levelDatas[Variables.currentStageIndex];
+        int starCount = 1;
+        if (bulletCountLeft >= levelData.twoStarMinimumBulletLeftCount) { starCount = 2; }
+        if (bulletCountLeft >= levelData.threeStarMinimumBulletLeftCount) { starCount = 3; }
+        Debug.Log(starCount);
+        for (int i = 0; i < starImages.Length; i++)
+        {
+            starImages[i].color = (i < starCount) ? Color.white : Color.black;
+            starImages[i].transform.localScale = Vector3.zero;
+        }
     }
 }

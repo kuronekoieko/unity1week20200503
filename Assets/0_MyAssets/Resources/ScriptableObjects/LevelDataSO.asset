@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelDatas:
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 4
-    twoStarMinimumBulletLeftCount: 3
-  - initialBulletCount: 0
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 0
+  - initialBulletCount: 4
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 0
+  - initialBulletCount: 3
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 0
+  - initialBulletCount: 2
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 1
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0

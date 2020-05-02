@@ -5464,6 +5464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextButton: {fileID: 2423863803430921132}
   uICameraController: {fileID: 685837721709680622}
+  bgImage: {fileID: 2423863802750023634}
   starImages:
   - {fileID: 590703977}
   - {fileID: 1124921378}
