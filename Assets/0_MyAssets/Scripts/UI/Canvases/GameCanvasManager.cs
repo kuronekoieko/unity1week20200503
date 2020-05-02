@@ -13,18 +13,19 @@ using UniRx;
 public class GameCanvasManager : BaseCanvasManager
 {
     [SerializeField] Text stageNumText;
+    [SerializeField] Button retryButton;
 
     public readonly ScreenState thisScreen = ScreenState.Game;
 
     public override void OnStart()
     {
-
-
         base.SetScreenAction(thisScreen: thisScreen);
 
         this.ObserveEveryValueChanged(currentStageIndex => Variables.currentStageIndex)
             .Subscribe(currentStageIndex => { ShowStageNumText(); })
             .AddTo(this.gameObject);
+
+        retryButton.onClick.AddListener(base.ReLoadScene);
 
         gameObject.SetActive(true);
 
