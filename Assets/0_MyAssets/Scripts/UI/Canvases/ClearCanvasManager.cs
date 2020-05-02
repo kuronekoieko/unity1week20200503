@@ -40,7 +40,7 @@ public class ClearCanvasManager : BaseCanvasManager
         DOVirtual.DelayedCall(1.2f, () =>
         {
             gameObject.SetActive(true);
-            DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.5f, 0.5f);
+            DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.4f, 0.5f);
             starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
             starImages[1].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.1f);
             starImages[2].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.2f);
@@ -70,7 +70,7 @@ public class ClearCanvasManager : BaseCanvasManager
         int starCount = 1;
         if (bulletCountLeft >= levelData.twoStarMinimumBulletLeftCount) { starCount = 2; }
         if (bulletCountLeft >= levelData.threeStarMinimumBulletLeftCount) { starCount = 3; }
-        Debug.Log(starCount);
+
         for (int i = 0; i < starImages.Length; i++)
         {
             starImages[i].color = (i < starCount) ? Color.white : Color.black;
