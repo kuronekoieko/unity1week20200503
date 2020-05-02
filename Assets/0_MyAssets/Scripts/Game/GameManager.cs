@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         i = this;
-        Variables.bulletCount = 5;
+        LevelData levelData = LevelDataSO.i.levelDatas[Variables.currentStageIndex];
+        Variables.bulletCount = levelData.initialBulletCount;
 
         stages = Resources.LoadAll("Stages", typeof(GameObject)).Cast<GameObject>().ToArray();
         Variables.lastStageIndex = stages.Length - 1;
