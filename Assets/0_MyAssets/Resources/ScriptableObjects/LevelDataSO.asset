@@ -16,15 +16,300 @@ MonoBehaviour:
   - initialBulletCount: 5
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 4
+  - initialBulletCount: 5
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 3
+  - initialBulletCount: 5
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 2
+  - initialBulletCount: 5
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 1
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
+    threeStarMinimumBulletLeftCount: 0
+    twoStarMinimumBulletLeftCount: 0
+  - initialBulletCount: 5
     threeStarMinimumBulletLeftCount: 0
     twoStarMinimumBulletLeftCount: 0
