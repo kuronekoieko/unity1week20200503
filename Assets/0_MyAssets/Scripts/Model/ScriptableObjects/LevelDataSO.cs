@@ -34,6 +34,6 @@ public class LevelDataSO : ScriptableObject
 public class LevelData
 {
     public int initialBulletCount;
-    public int threeStarMinimumBulletLeftCount;
-    public int twoStarMinimumBulletLeftCount;
+    public int threeStarMinimumBulletCountUsed;
+    public int twoStarMinimumBulletCountUsed;
 }

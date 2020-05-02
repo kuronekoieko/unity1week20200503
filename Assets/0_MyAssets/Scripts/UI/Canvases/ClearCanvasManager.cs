@@ -66,11 +66,13 @@ public class ClearCanvasManager : BaseCanvasManager
 
     void SetStarCount()
     {
-        int bulletCountLeft = GameManager.i.bulletManager.GetLeftCount();
+        int bulletCountUsed = GameManager.i.bulletManager.GetUsedCount();
         LevelData levelData = LevelDataSO.i.levelDatas[Variables.currentStageIndex];
         int starCount = 1;
-        if (bulletCountLeft >= levelData.twoStarMinimumBulletLeftCount) { starCount = 2; }
-        if (bulletCountLeft >= levelData.threeStarMinimumBulletLeftCount) { starCount = 3; }
+        if (bulletCountUsed <= levelData.twoStarMinimumBulletCountUsed) { starCount = 2; }
+        if (bulletCountUsed <= levelData.threeStarMinimumBulletCountUsed) { starCount = 3; }
+
+
 
         for (int i = 0; i < starImages.Length; i++)
         {
