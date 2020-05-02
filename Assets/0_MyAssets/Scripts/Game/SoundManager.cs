@@ -9,7 +9,7 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
-        i = this;
+        if (i == null) i = this;
         audioSource = GetComponent<AudioSource>();
     }
 

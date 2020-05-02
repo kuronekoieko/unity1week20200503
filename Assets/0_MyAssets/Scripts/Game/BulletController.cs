@@ -49,6 +49,7 @@ public class BulletController : MonoBehaviour
         isCollision = true;
         vel = Vector3.Reflect(vel, collisionInfo.contacts[0].normal);
         rb.velocity = vel;
+        SoundManager.i.PlayOneShot(1);
     }
 
     void OnCollisionExit2D(Collision2D collisionInfo)

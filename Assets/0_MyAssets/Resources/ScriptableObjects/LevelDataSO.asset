@@ -14,302 +14,152 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelDatas:
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 2
+    twoStarMinimumBulletCountUsed: 3
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 4
+    twoStarMinimumBulletCountUsed: 5
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2
   - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
-  - initialBulletCount: 5
-    threeStarMinimumBulletLeftCount: 0
-    twoStarMinimumBulletLeftCount: 0
+    threeStarMinimumBulletCountUsed: 1
+    twoStarMinimumBulletCountUsed: 2

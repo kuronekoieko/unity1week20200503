@@ -37,6 +37,7 @@ public class BulletManager : MonoBehaviour
             .FirstOrDefault();
         if (bullet == null) { return; }
         bullet.Shoot(vec);
+        SoundManager.i.PlayOneShot(0);
     }
 
     public int GetUsedCount()
