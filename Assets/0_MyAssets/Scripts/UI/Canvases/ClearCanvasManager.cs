@@ -12,11 +12,10 @@ public class ClearCanvasManager : BaseCanvasManager
     [SerializeField] UICameraController uICameraController;
     [SerializeField] Image bgImage;
     [SerializeField] Image[] starImages;
-    public readonly ScreenState thisScreen = ScreenState.Clear;
 
     public override void OnStart()
     {
-        base.SetScreenAction(thisScreen: thisScreen);
+        base.SetScreenAction(thisScreen: ScreenState.Clear);
 
         nextButton.onClick.AddListener(OnClickNextButton);
         retryButton.onClick.AddListener(base.ReLoadScene);
@@ -25,7 +24,7 @@ public class ClearCanvasManager : BaseCanvasManager
 
     public override void OnUpdate()
     {
-        if (Variables.screenState != thisScreen) { return; }
+        if (!base.IsThisScreenState()) { return; }
 
     }
 

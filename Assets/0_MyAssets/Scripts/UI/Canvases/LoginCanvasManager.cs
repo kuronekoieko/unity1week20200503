@@ -16,14 +16,12 @@ public class LoginCanvasManager : BaseCanvasManager
     [SerializeField] CoinGetAnim coinGetAnim;
     [SerializeField] int[] coinCounts;
     Text[] bonusCountTexts;
-    public readonly ScreenState thisScreen = ScreenState.Login;
-
     int coinIndex;
     int coinRate;
 
     public override void OnStart()
     {
-        base.SetScreenAction(thisScreen: thisScreen);
+        base.SetScreenAction(thisScreen: ScreenState.Login);
         gameObject.SetActive(false);
 
         closeButton.onClick.AddListener(OnClickCloseButton);
@@ -56,7 +54,7 @@ public class LoginCanvasManager : BaseCanvasManager
 
     public override void OnUpdate()
     {
-        if (Variables.screenState != thisScreen) { return; }
+        if (!base.IsThisScreenState()) { return; }
 
     }
 

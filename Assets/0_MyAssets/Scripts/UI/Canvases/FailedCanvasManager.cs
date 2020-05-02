@@ -8,18 +8,16 @@ using DG.Tweening;
 public class FailedCanvasManager : BaseCanvasManager
 {
     [SerializeField] Button restartButton;
-    public readonly ScreenState thisScreen = ScreenState.Failed;
-
     public override void OnStart()
     {
-        base.SetScreenAction(thisScreen: thisScreen);
+        base.SetScreenAction(thisScreen: ScreenState.Failed);
         restartButton.onClick.AddListener(OnClickRestartButton);
         gameObject.SetActive(false);
     }
 
     public override void OnUpdate()
     {
-        if (Variables.screenState != thisScreen) { return; }
+        if (!base.IsThisScreenState()) { return; }
 
     }
 

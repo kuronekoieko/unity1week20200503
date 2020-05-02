@@ -15,11 +15,9 @@ public class GameCanvasManager : BaseCanvasManager
     [SerializeField] Text stageNumText;
     [SerializeField] Button retryButton;
 
-    public readonly ScreenState thisScreen = ScreenState.Game;
-
     public override void OnStart()
     {
-        base.SetScreenAction(thisScreen: thisScreen);
+        base.SetScreenAction(thisScreen: ScreenState.Game);
 
         this.ObserveEveryValueChanged(currentStageIndex => Variables.currentStageIndex)
             .Subscribe(currentStageIndex => { ShowStageNumText(); })
@@ -33,7 +31,7 @@ public class GameCanvasManager : BaseCanvasManager
 
     public override void OnUpdate()
     {
-        if (Variables.screenState != thisScreen) { return; }
+        if (!base.IsThisScreenState()) { return; }
 
     }
 
@@ -52,3 +50,4 @@ public class GameCanvasManager : BaseCanvasManager
         stageNumText.text = "LEVEL " + (Variables.currentStageIndex + 1).ToString("000");
     }
 }
+
