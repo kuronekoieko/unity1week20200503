@@ -27,7 +27,7 @@ public class BulletController : MonoBehaviour
         transform.localPosition = Vector3.zero;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         switch (bulletState)
         {
@@ -48,6 +48,7 @@ public class BulletController : MonoBehaviour
         if (isCollision) { return; }
         isCollision = true;
         vel = Vector3.Reflect(vel, collisionInfo.contacts[0].normal);
+        rb.velocity = vel;
     }
 
     void OnCollisionExit2D(Collision2D collisionInfo)
@@ -56,7 +57,6 @@ public class BulletController : MonoBehaviour
         if (enemy) { return; }
         isCollision = false;
     }
-
 
     void Timer()
     {
