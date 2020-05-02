@@ -5,12 +5,14 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager i;
-    AudioSource audioSource;
+    AudioSource[] audioSources;
 
     void Awake()
     {
         if (i == null) i = this;
-        audioSource = GetComponent<AudioSource>();
+        audioSources = GetComponents<AudioSource>();
+        audioSources[1].clip = SoundResourceSO.i.bgm.audioClip;
+        audioSources[1].Play();
     }
 
     public void OnStart()
@@ -23,7 +25,7 @@ public class SoundManager : MonoBehaviour
         if (SoundResourceSO.i.resources.Length - 1 < resourceIndex) { return; }
         AudioClip clip = SoundResourceSO.i.resources[resourceIndex].audioClip;
         if (clip == null) { return; }
-        audioSource.PlayOneShot(clip);
+        audioSources[0].PlayOneShot(clip);
     }
 
 }

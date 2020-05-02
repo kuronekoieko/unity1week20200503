@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f1a87591ba84f54a0665e5a44b5c75, type: 3}
   m_Name: SoundResourceSO
   m_EditorClassIdentifier: 
+  bgm:
+    audioClip: {fileID: 8300000, guid: 72a844678c1d94f2e8ec38daaddd7cdf, type: 3}
+    name: 
   resources:
-  - audioClip: {fileID: 8300000, guid: 8f3da8746a6fa4e09ae021b575f597ea, type: 3}
+  - audioClip: {fileID: 8300000, guid: 71c5134c1053c43659b22f3cedb05f59, type: 3}
     name: "\u9283\u58F0"
-  - audioClip: {fileID: 8300000, guid: af7f01f248f764b0b942b9cb333f7594, type: 3}
+  - audioClip: {fileID: 8300000, guid: f598fa30d9a3c4ad8a85ce8d20fd30c4, type: 3}
     name: "\u8DF3\u5F3E"
-  - audioClip: {fileID: 8300000, guid: daf859748c5a849d2b41b07c7237db6f, type: 3}
+  - audioClip: {fileID: 8300000, guid: c5eac0d7825ee431292f80c238e4ab48, type: 3}
     name: "\u30AF\u30EA\u30A2"
   - audioClip: {fileID: 0}
     name: 

@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "MyGame/Create SoundResourceSO", fileName = "SoundResourceSO")]
 public class SoundResourceSO : ScriptableObject
 {
+    public SoundResource bgm;
     public SoundResource[] resources;
 
     private static SoundResourceSO _i;
