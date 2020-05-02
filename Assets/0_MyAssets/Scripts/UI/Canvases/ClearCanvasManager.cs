@@ -30,7 +30,6 @@ public class ClearCanvasManager : BaseCanvasManager
 
     protected override void OnOpen()
     {
-       // SoundManager.i.PlayOneShot(2);
         uICameraController.PlayConfetti();
         SetStarCount();
 

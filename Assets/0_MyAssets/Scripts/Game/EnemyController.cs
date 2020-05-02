@@ -61,5 +61,6 @@ public class EnemyController : MonoBehaviour
         gameObject.layer = LayerMask.NameToLayer("Dead");
         isDead = true;
         deadPS.Play();
+        SoundManager.i.PlayOneShot(2);
     }
 }
