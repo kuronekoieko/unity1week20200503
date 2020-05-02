@@ -8,6 +8,7 @@ using DG.Tweening;
 public class ClearCanvasManager : BaseCanvasManager
 {
     [SerializeField] Button nextButton;
+    [SerializeField] Button retryButton;
     [SerializeField] UICameraController uICameraController;
     [SerializeField] Image bgImage;
     [SerializeField] Image[] starImages;
@@ -18,6 +19,7 @@ public class ClearCanvasManager : BaseCanvasManager
         base.SetScreenAction(thisScreen: thisScreen);
 
         nextButton.onClick.AddListener(OnClickNextButton);
+        retryButton.onClick.AddListener(base.ReLoadScene);
         gameObject.SetActive(false);
     }
 
@@ -40,7 +42,7 @@ public class ClearCanvasManager : BaseCanvasManager
         DOVirtual.DelayedCall(1.2f, () =>
         {
             gameObject.SetActive(true);
-            DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.4f, 0.5f);
+            DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.3f, 0.5f);
             starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
             starImages[1].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.1f);
             starImages[2].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.2f);
