@@ -9,6 +9,7 @@ public class ClearCanvasManager : BaseCanvasManager
 {
     [SerializeField] Button nextButton;
     [SerializeField] UICameraController uICameraController;
+    [SerializeField] Image[] starImages;
     public readonly ScreenState thisScreen = ScreenState.Clear;
 
     public override void OnStart()
@@ -28,9 +29,19 @@ public class ClearCanvasManager : BaseCanvasManager
     protected override void OnOpen()
     {
         uICameraController.PlayConfetti();
+
+        for (int i = 0; i < starImages.Length; i++)
+        {
+            starImages[i].color = Color.white;
+            starImages[i].transform.localScale = Vector3.zero;
+        }
+
         DOVirtual.DelayedCall(1.2f, () =>
         {
             gameObject.SetActive(true);
+            starImages[0].transform.DOScale(Vector3.one, 1).SetEase(Ease.OutBack);
+            starImages[1].transform.DOScale(Vector3.one, 1).SetEase(Ease.OutBack).SetDelay(0.1f);
+            starImages[2].transform.DOScale(Vector3.one, 1).SetEase(Ease.OutBack).SetDelay(0.2f);
         });
     }
 
