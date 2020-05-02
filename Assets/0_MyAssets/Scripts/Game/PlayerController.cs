@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform armAxis;
     [SerializeField] Transform shootPoint;
+    [SerializeField] TextMesh textMesh;
+    [SerializeField] SpriteRenderer speechBubble;
     BulletManager bulletManager;
     LineRenderer lineRenderer;
     Vector3 shootVec;
@@ -17,6 +19,8 @@ public class PlayerController : MonoBehaviour
         lineRenderer.endWidth = 0.05f;
         bulletManager.OnStart(shootPoint);
         this.bulletManager = bulletManager;
+        textMesh.gameObject.SetActive(Variables.currentStageIndex == 0);
+        speechBubble.gameObject.SetActive(Variables.currentStageIndex == 0);
     }
 
 
