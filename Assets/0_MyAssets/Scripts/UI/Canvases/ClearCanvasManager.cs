@@ -29,10 +29,15 @@ public class ClearCanvasManager : BaseCanvasManager
     protected override void OnOpen()
     {
         uICameraController.PlayConfetti();
-
+        int bulletCountLeft = GameManager.i.bulletManager.GetLeftCount();
+        LevelData levelData = LevelDataSO.i.levelDatas[Variables.currentStageIndex];
+        int starCount = 1;
+        if (bulletCountLeft >= levelData.twoStarMinimumBulletLeftCount) { starCount = 2; }
+        if (bulletCountLeft >= levelData.threeStarMinimumBulletLeftCount) { starCount = 3; }
+        Debug.Log(starCount);
         for (int i = 0; i < starImages.Length; i++)
         {
-            starImages[i].color = Color.white;
+            starImages[i].color = (i < starCount) ? Color.white : Color.black;
             starImages[i].transform.localScale = Vector3.zero;
         }
 

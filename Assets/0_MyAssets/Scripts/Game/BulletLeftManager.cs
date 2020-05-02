@@ -13,7 +13,7 @@ public class BulletLeftManager : MonoBehaviour
     public void OnStart()
     {
         BulletLeftGenerator();
-        this.ObserveEveryValueChanged(usedBulletCount => GameManager.i.bulletManager.GetCount())
+        this.ObserveEveryValueChanged(usedBulletCount => GameManager.i.bulletManager.GetUsedCount())
             .Subscribe(usedBulletCount =>
             {
                 for (int i = 0; i < usedBulletCount; i++)

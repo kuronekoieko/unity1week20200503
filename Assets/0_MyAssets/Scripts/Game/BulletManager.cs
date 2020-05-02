@@ -39,8 +39,13 @@ public class BulletManager : MonoBehaviour
         bullet.Shoot(vec);
     }
 
-    public int GetCount()
+    public int GetUsedCount()
     {
         return bulletControllers.Where(b => b.bulletState != BulletState.Waiting).Count();
+    }
+
+    public int GetLeftCount()
+    {
+        return bulletControllers.Where(b => b.bulletState == BulletState.Waiting).Count();
     }
 }
