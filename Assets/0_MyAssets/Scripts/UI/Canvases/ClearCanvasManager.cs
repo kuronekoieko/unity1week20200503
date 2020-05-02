@@ -42,9 +42,9 @@ public class ClearCanvasManager : BaseCanvasManager
         {
             gameObject.SetActive(true);
             DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.3f, 0.5f);
-            starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
-            starImages[1].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.1f);
-            starImages[2].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.2f);
+            starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).OnStart(() => SoundManager.i.PlayOneShot(3));
+            starImages[1].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.1f).OnStart(() => SoundManager.i.PlayOneShot(3));
+            starImages[2].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).SetDelay(0.2f).OnStart(() => SoundManager.i.PlayOneShot(3));
         });
     }
 

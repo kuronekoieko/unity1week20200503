@@ -66,12 +66,14 @@ public class BaseCanvasManager : MonoBehaviour
         if (!IsThisScreenState()) { return; }
         Variables.currentStageIndex++;
         SceneManager.LoadScene("GameScene");
+        SoundManager.i.PlayOneShot(4);
     }
 
     protected void ReLoadScene()
     {
         if (!IsThisScreenState()) { return; }
         SceneManager.LoadScene("GameScene");
+        SoundManager.i.PlayOneShot(4);
     }
 
     protected bool IsThisScreenState()
