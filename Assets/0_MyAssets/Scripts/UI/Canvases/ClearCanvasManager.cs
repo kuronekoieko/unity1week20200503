@@ -44,7 +44,11 @@ public class ClearCanvasManager : BaseCanvasManager
 
         DOVirtual.DelayedCall(0.8f, () =>
         {
-            if (isLastStage) { uICameraController.PlayConfetti(); }
+            if (isLastStage)
+            {
+                SoundManager.i.PlayOneShot(5);
+                uICameraController.PlayConfetti();
+            }
             gameObject.SetActive(true);
             DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.3f, 0.5f);
             starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).OnStart(() => SoundManager.i.PlayOneShot(3));

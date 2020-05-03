@@ -26,3 +26,5 @@ MonoBehaviour:
     name: "\u661F"
   - audioClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
     name: "\u30DC\u30BF\u30F3"
+  - audioClip: {fileID: 8300000, guid: daf859748c5a849d2b41b07c7237db6f, type: 3}
+    name: "\u5B8C\u8D70\u6642"
