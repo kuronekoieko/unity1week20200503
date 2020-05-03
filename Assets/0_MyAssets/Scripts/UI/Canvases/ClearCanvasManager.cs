@@ -11,6 +11,7 @@ public class ClearCanvasManager : BaseCanvasManager
     [SerializeField] Button retryButton;
     [SerializeField] UICameraController uICameraController;
     [SerializeField] Image bgImage;
+    [SerializeField] Text clearText;
     [SerializeField] Image[] starImages;
 
     public override void OnStart()
@@ -30,8 +31,10 @@ public class ClearCanvasManager : BaseCanvasManager
 
     protected override void OnOpen()
     {
-        nextButton.gameObject.SetActive(Variables.currentStageIndex != Variables.lastStageIndex);
-        //  uICameraController.PlayConfetti();
+        bool isLastStage = Variables.currentStageIndex == Variables.lastStageIndex;
+        nextButton.gameObject.SetActive(!isLastStage);
+        clearText.text = isLastStage ? "COMPLETE!!!" : "CLEAR!";
+
         SetStarCount();
 
         Color c = bgImage.color;
@@ -41,6 +44,7 @@ public class ClearCanvasManager : BaseCanvasManager
 
         DOVirtual.DelayedCall(0.8f, () =>
         {
+            if (isLastStage) { uICameraController.PlayConfetti(); }
             gameObject.SetActive(true);
             DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.3f, 0.5f);
             starImages[0].transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack).OnStart(() => SoundManager.i.PlayOneShot(3));
