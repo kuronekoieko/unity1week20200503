@@ -17,7 +17,7 @@ public class BulletController : MonoBehaviour
     float timer;
     float timeLimit = 3;
     Vector3 vel;
-    bool isCollision;
+    Vector2 normal;
 
     public void OnStart()
     {
@@ -40,23 +40,16 @@ public class BulletController : MonoBehaviour
         }
     }
 
+
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
         var enemy = collisionInfo.gameObject.GetComponent<EnemyController>();
         if (enemy) { return; }
-
-        if (isCollision) { return; }
-        isCollision = true;
-        vel = Vector3.Reflect(vel, collisionInfo.contacts[0].normal);
-        rb.velocity = vel;
+        //重なったコライダーに、同一フレーム内で検知しないように
+        if (collisionInfo.contacts[0].normal == normal) { return; }
+        normal = collisionInfo.contacts[0].normal;
+        vel = Vector3.Reflect(vel, normal);
         SoundManager.i.PlayOneShot(1);
-    }
-
-    void OnCollisionExit2D(Collision2D collisionInfo)
-    {
-        var enemy = collisionInfo.gameObject.GetComponent<EnemyController>();
-        if (enemy) { return; }
-        isCollision = false;
     }
 
     void Timer()
