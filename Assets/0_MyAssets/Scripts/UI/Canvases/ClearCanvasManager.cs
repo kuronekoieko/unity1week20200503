@@ -30,7 +30,7 @@ public class ClearCanvasManager : BaseCanvasManager
 
     protected override void OnOpen()
     {
-        uICameraController.PlayConfetti();
+        //  uICameraController.PlayConfetti();
         SetStarCount();
 
         Color c = bgImage.color;
@@ -38,7 +38,7 @@ public class ClearCanvasManager : BaseCanvasManager
         bgImage.color = c;
 
 
-        DOVirtual.DelayedCall(1.2f, () =>
+        DOVirtual.DelayedCall(0.8f, () =>
         {
             gameObject.SetActive(true);
             DOTween.ToAlpha(() => bgImage.color, color => bgImage.color = color, 0.3f, 0.5f);
