@@ -30,6 +30,7 @@ public class ClearCanvasManager : BaseCanvasManager
 
     protected override void OnOpen()
     {
+        nextButton.gameObject.SetActive(Variables.currentStageIndex != Variables.lastStageIndex);
         //  uICameraController.PlayConfetti();
         SetStarCount();
 
